@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casamento I❤️S</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="titulo-borda">Casamento de Igor e Samyra ❤️</h1>
+  </header>
+
+  <main>
+    <!-- Lista de convidados -->
+    <section>
+      <h2>Lista de Convidados</h2>
+      <form id="guest-form">
+        <input id="guest-name" type="text" placeholder="Nome do convidado" required />
+        <select id="guest-type">
+          <option value="Convidado">Convidado</option>
+          <option value="Padrinho">Padrinho</option>
+          <option value="Madrinha">Madrinha</option>
+        </select>
+        <button type="submit">Adicionar</button>
+      </form>
+      <input id="search-guest" type="text" placeholder="Pesquisar" />
+      <ul id="guest-list"></ul>
+      <button id="clear-guests" class="danger">Limpar todos</button>
+    </section>
+
+    <!-- Buffet -->
+    <section>
+      <h2>Buffet</h2>
+      <form id="buffet-form">
+        <input id="buffet-name" type="text" placeholder="Nome do item" required />
+        <select id="buffet-category">
+          <option value="entrada">Entrada</option>
+          <option value="prato">Prato Principal</option>
+          <option value="bebida">Bebida</option>
+        </select>
+        <button type="submit">Adicionar</button>
+      </form>
+
+      <h3>Entradas</h3>
+      <ul id="list-entrada"></ul>
+      <h3>Pratos Principais</h3>
+      <ul id="list-prato"></ul>
+      <h3>Bebidas</h3>
+      <ul id="list-bebida"></ul>
+    </section>
+
+    <!-- Gastos -->
+    <section>
+      <h2>Gastos do Casamento</h2>
+      <form id="expense-form">
+        <input id="expense-name" type="text" placeholder="Descrição" required />
+        <input id="expense-value" type="number" step="0.01" placeholder="Valor em R$" required />
+        <button type="submit">Adicionar</button>
+      </form>
+      <ul id="expense-list"></ul>
+      <p>Total: <span id="total-value">R$ 0,00</span></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

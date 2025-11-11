@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff8e1;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+header {
+  margin-top: 20px;
+}
+
+.titulo-borda {
+  font-size: 2.4rem;
+  padding: 15px 25px;
+  border: 6px solid transparent;
+  border-image: url('https://i.imgur.com/ozO7qgN.png') 30 round;
+  text-align: center;
+  display: inline-block;
+}
+
+main {
+  max-width: 800px;
+  width: 100%;
+  padding: 20px;
+}
+
+section {
+  background: #ffffffcc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 25px;
+  box-shadow: 0 3px 10px #d9c89b;
+}
+
+input, select, button {
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 6px;
+  border: 1px solid #a68a52;
+}
+
+button {
+  cursor: pointer;
+  background: #ffd04d;
+  border: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #ffcd38;
+}
+
+button.danger {
+  background: #ff7b7b;
+  color: #fff;
+}
+
+ul { 
+  list-style: none; 
+  padding: 0; 
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  border-bottom: 1px solid #c9b27d;
+}
+
+li button {
+  background: #ff9898;
+  border: none;
+  border-radius: 4px;
+  padding: 3px 8px;
+  cursor: pointer;
+}
+li button:hover {
+  background: #ff5c5c;
+}
